@@ -7,6 +7,8 @@ Usa adecuadamente los endpoints para crear una app que nos traiga una nueva preg
 
 Revisa la [documentación](https://codequestapi.onrender.com) y averigua cual es el endopint para poder hacer una petición GET y traerte una pregunta sobre programación de cualquier categoría. Ignora por tanto el selector de categorías de la solución. Fíjate que para simplificar la app simplemente vamos a rellenar nodos del DOM con la información de cada pregunta y la respuesta correcta.
 
+[Demo](https://omiras.github.io/app-programming-questions/)
+
 ## Iteración 2
 
 Añade un selector para poder indicar la categoría de la pregutna tipo test tal y como se aprecia en la demo. Para ellos tienes dos endpoints interesantes
@@ -17,4 +19,8 @@ Añade un selector para poder indicar la categoría de la pregutna tipo test tal
 ## Iteración 3 - BONUS
 
 La API disone de un endpoint el cuál es capaz de generar preguntas tipo test dado un _prompt_ (internamente, la API se conecta a otra API, en este caso, a Gemini de Google). Implementa las estructuras necesarias para permitir al usuario escribir unas palabras claves y generar una pregunta tipo test basada en dichas palabras clave. ![Ejemplo uso](https://oscarm.tinytake.com/media/174c4c3?filename=1744178589153_TinyTake09-04-2025-08-03-01_638797753861259388.png&sub_type=thumbnail_preview&type=attachment&width=1200&height=721)
+
+## Iteración 4 - BONUS
+
+En esta [implementación](https://code-quiz-ai-quiz-gen.vercel.app/) de [Kevin Hugues](https://github.com/kevmhughes) se da una idea de cómo hacer una implementación completa del consumo de la API con un poco más de interactividad y diseño más cuidado.
 
