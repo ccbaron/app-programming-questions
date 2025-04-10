@@ -1,3 +1,18 @@
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const categorySelector = document.querySelector('#category-selector');
+  const response = await fetch('https://codequestapi.onrender.com/api/v1/questions/categories');
+  const categories = await response.json();
+
+  categories.forEach(category => {
+    const option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
+    categorySelector.appendChild(option);
+  });
+}
+
+//Evento para cargar las preguntas//
 document.querySelector('#load-question').addEventListener('click', async () => {
   document.querySelector('#question-text').textContent = 'Cargando...';
   document.querySelector('#code-example').textContent = '';
@@ -38,16 +53,3 @@ document.querySelector('#load-question').addEventListener('click', async () => {
     document.querySelector('#correct-answer').textContent = pregunta.answerOptions[3].answer;
   }
 });
-
-async () => {
-  const categorySelector = document.querySelector('#category-selector');
-  const response = await fetch('https://codequestapi.onrender.com/api/v1/questions/categories');
-  const categories = await response.json();
-
-  categories.forEach(category => {
-    const option = document.createElement('option');
-    option.value = category;
-    option.textContent = category;
-    categorySelector.appendChild(option);
-  });
-}
