@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const categorySelector = document.querySelector('#category-selector');
   const response = await fetch('https://codequestapi.onrender.com/api/v1/questions/categories');
   const categories = await response.json();
+  console.log(categories);
 
   categories.forEach(category => {
     const option = document.createElement('option');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     option.textContent = category;
     categorySelector.appendChild(option);
   });
-}
+});
 
 //Evento para cargar las preguntas//
 document.querySelector('#load-question').addEventListener('click', async () => {
