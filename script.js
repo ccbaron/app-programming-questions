@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const categories = await response.json();
   console.log(categories);
 
-  categories.forEach(category => {
+  categories.results.forEach(category => {
     const option = document.createElement('option');
     option.value = category;
     option.textContent = category;
