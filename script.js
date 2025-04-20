@@ -54,3 +54,4 @@ document.querySelector('#load-question').addEventListener('click', async () => {
     document.querySelector('#correct-answer').textContent = pregunta.answerOptions[3].answer;
   }
 });
+
